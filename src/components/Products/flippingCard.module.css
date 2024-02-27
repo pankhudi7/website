@@ -1,0 +1,143 @@
+/* .card {
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    float: left;
+    perspective: 500px;
+    margin:10px;
+    opacity: .8;
+  }
+  
+  .content {
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 1s;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+
+  
+  .card:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 2px solid red; 
+    background-color: transparent; 
+    text-align: left; 
+    backface-visibility: hidden;
+   
+  }
+
+  
+  .back {
+    border: 3px solid #EAD196; 
+    background-color: #8E8D8A;
+    opacity: 0.9;
+    height: fit-content;
+    transform: rotateY( 180deg );
+    color: #ffffff;
+    
+  }
+
+  .back .heading {
+    opacity: 0;
+  }
+
+  .heading{
+    font: Verdana;
+    font-size: 40px;
+    height:10%;
+    background-color:rgb(192, 13, 19);
+    color: #EAD196;
+    color: #FBF9F1;
+    font-weight: 300;
+  }
+
+  /* .heading :hover{
+    transform: rotateY( -180deg );
+  } */
+
+  /* .backText{
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card .content img {
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+ }  */
+
+
+ .flipCard {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  perspective: 500px;
+  margin:10px;
+  display: grid;
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+.flipCardFront, .flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipCardFront {
+  opacity: 1;
+  color: black;
+}
+
+.flipCardBack {
+  background-color: #1273b3;
+  color: white;
+  transform: rotateY(180deg);
+  opacity: .9;
+  text-align: left;
+  font-size: 28px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+}
+
+.heading{
+  font: Verdana;
+  font-size: 60px;
+  height:10%;
+  background-color:rgb(192, 13, 19);
+  color: #EAD196;
+  color: #FBF9F1;
+  
+}
+
+.headingText{
+  margin-top: 1rem;
+  font-size: 30px;
+}

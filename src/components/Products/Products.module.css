@@ -1,0 +1,41 @@
+.productcontainer{
+    margin-top: 1%;
+    height: 110vh;
+    background-image: url("../../resources/products.jpg");
+    background-size: cover; 
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardspacing{
+    margin-left: 10px;
+    margin-right:1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.head{
+  text-align: center;
+  text-decoration: underline;
+} 
+
+ul {
+    list-style-type: disc;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px; 
+    width: 100%; 
+  }
+  
+  ul li {
+    font-size: 25px;
+    margin-bottom: 10px;
+    overflow: hidden; 
+    /* white-space: nowrap;  */
+    text-overflow: ellipsis; 
+  }
+  

@@ -1,0 +1,56 @@
+.parallax-1{
+    background-color : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    height: 100vh;
+  }
+  .parent {
+    text-align: center;
+  }
+
+  .child {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+  .underlined {
+    text-decoration: underline;
+    color: #DD4A48;
+   }
+  .abtusImg{
+    width: 55%;
+    height: 100vh;    
+  }
+
+  .abtusText{    
+    line-height: 160%;
+    font-size: 27px;
+    color: rgb(66, 62, 62);
+    /* padding: 0px 20px 0px 20px; */
+    padding: 0px 2% 0px 2%;
+    text-align: left;
+    padding-left: 10%;
+  }
+
+  .abtusHead{
+    font-family: sans-serif;
+    font-size: 40px;  
+    border-bottom: 3px solid #DD4A48; 
+    margin-bottom: 2%;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    color:#12486B
+  }
+
+  .aboutus-img{
+     height: 100vh; 
+     width: 50%; 
+     overflow: hidden;
+  }
+
+  .aboutus-img img{
+    height: 100%;
+    width: 100%;
+  }
+
