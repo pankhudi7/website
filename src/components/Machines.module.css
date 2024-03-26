@@ -1,0 +1,22 @@
+.mainprcontainer{
+    margin: 1%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.productlog{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1%;
+    justify-content: center;    
+    width: 100%;
+    margin: 1%;
+}
+
+.producttag{
+    width: 40%;
+    height: 40%;
+    padding: 1%;
+   
+}
