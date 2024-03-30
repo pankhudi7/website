@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(0, 0, 0, 0.85);
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: 2%
+}
+
+.cards {
+  width: 100%;
+  height: 50%;
+  padding: 1%;
+  margin: 1%;
+  background-color: #f0f0f0;
+}
+
+.cards + .cards {
+  margin-top: 1em;
+}
+
+.card {
+  position: sticky;
+  height: 500px;
+  top: 1em;
+  padding: 2%;
+  font-size: 30px;
+  border-radius: 1em;
+  background-color: red;
+}
+
+.card {
+  display: flex;
+  align-items: center; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  margin-bottom: 1rem;
+}
+
+.cardContent {
+  flex: 1; 
+  padding: 20px;
+}
+
+.cardImage {
+  width: 50%; 
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0.5, 1);
+  border-radius: 20px;
+}
+
+
+.card:nth-child(1) {
+  background-color: #ff6b30;
+}
+
+.card:nth-child(2) {
+  background-color: #ffa630;
+
+}
+
+.card:nth-child(3) {
+  background-color: #e52b63;
+}
+
+.card:nth-child(4) {
+  background-color: #ff8656;
+}
+
+.card:nth-child(5) {
+  background-color: #ffb756;
+}
+
+.card:nth-child(6) {
+  background-color: #ea4f7e;
+}
+
+.cardtitle {
+  margin-top: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.cardtext {
+  margin-bottom: 0;
+  font-family: "Lora", serif;
+}
+
+.popup{
+  color: red;
+}
