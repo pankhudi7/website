@@ -1,0 +1,124 @@
+.mainwrapper{
+  height: 65vh;
+  padding-bottom: 3%;
+}
+
+.parallaxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 53vh;
+  background-image: url('../../resources/service.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 2% 1% 2% 1%;
+}
+
+.contentBox{
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  background: rgba(122, 118, 118, 0.48);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(199, 199, 199, 0.3);
+  height: 50%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentBox h1{ 
+    margin: 0;
+    font-size: 4.2rem;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.contentBox p{
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'Poppins';
+  color:whitesmoke;
+  font-weight: 400;
+  width: 70%;
+
+}
+
+.servicebutton{
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    background-color: rgb(115, 213, 255);
+    color: white;
+    border: 0px;
+    width: fit-content;
+    border-radius: 3px;
+    padding: 5px;
+} 
+
+.servicebutton:hover{
+    cursor: pointer;
+    background-color: white;
+    color:rgb(115, 213, 255);
+}
+
+@media (max-width: 768px) {
+  .contentBox{
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    background: rgba(199, 199, 199, 0.48);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(199, 199, 199, 0.3);
+    height: 50%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+    .contentBox h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .servicebutton{
+      font-size: 1rem;
+      font-family: 'Poppins';
+      background-color: rgb(115, 213, 255);
+      color: white;
+      border: 0px;
+      width: fit-content;
+      border-radius: 10px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  } 
+  .servicebutton:hover{
+    cursor: pointer;
+    background-color: white;
+    color:rgb(115, 213, 255);
+}
+
+.contentBox p{
+  display: none;
+}
+  
+  }
+
+ @media (min-width: 769px) {
+    .contentBox h1 {
+      font-size: 4rem;
+      text-align: center;
+    }
+    .contentBox p{
+      font-size: 1rem;
+    }
+  
+    }
