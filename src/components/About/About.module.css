@@ -1,0 +1,115 @@
+.parent{
+  margin-top: 5rem;
+  height: 1920px;
+  background-color: black;
+  display: flex;
+  position: relative;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 15%;
+}
+
+.mainContainer{
+  position:absolute;
+  height: 2013px;
+  background-color: #F0F0F0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.aboutusCard{
+  margin-top: 10%;
+  top: 10%;
+  height: fit-content;
+  width: 56%;
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+  margin-left: 44%;
+  position: sticky;
+  margin-bottom: 10%;
+}
+
+.line{
+  border-top: 7px solid #FF0505;
+  width: 90px;
+  margin-left: 2rem;
+  margin-top: 1rem;
+
+}
+.heading{
+  margin-left: 2rem;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.content{
+  margin: 1rem 2rem 4rem 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "Poppins";
+}
+
+.imageContainer{
+  margin-left: 16px;
+  margin-top :1rem;
+  height: 650px;
+  width: 70%;
+  z-index: 1;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-size: cover;
+  background-color: grey;
+}
+
+@media screen and (max-width: 868px) {
+  .parent {
+    display: grid;
+    align-items: center;
+    height: 400px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+ 
+  /* .parent{
+    height: 50vh;
+    background-color: black;
+    display: grid;
+    align-items: center;
+    margin-left: 8%;
+    margin-right: 8%;
+  } */
+
+  .content{
+    text-align: left;
+    font-size: 0.7rem;
+    margin: 1rem;
+  }
+
+  .mainContainer{
+    background-color: #F0F0F0;
+    height: fit-content;
+    display: flex;
+    padding: 1rem;
+    height: 500px;      
+  }
+
+  .aboutusCard {
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+    height: fit-content;
+    margin-bottom: 5%;
+  }
+
+  .imageContainer {
+    justify-content: center;
+    height: 40vh;
+    width: 50%;
+    background-position: center;
+    
+  }
+
+}
