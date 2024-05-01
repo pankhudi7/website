@@ -4,13 +4,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3rem;
+  padding-bottom: 0;
+  height: 500px;
 }
 
 .mapContainer {
   display: flex;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
   justify-content: space-between;
-  width: 100%;
+  width: 98%;
 }
+
+.headingfooter{
+  font-family: 'Poppins';
+  font-size: 1.6rem;
+}
+
+.footerhead{
+  font-size: 1.5rem;
+  font-family: 'Poppins';
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infofooter{
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  /* align-items: center; */
+  margin: 1rem;
+
+}
+
+.emails{
+font-size: 1.1rem;
+font-family: 'Poppins';
+margin-top: 2rem;
+}
+
 
 .map {
   width: 40%;
@@ -51,11 +88,12 @@
 }
 
 
-.links a {
+.infofooter a {
   color: #fff;
+  text-decoration: none;
 }
 
-.links a:hover {
+.infofooter a:hover {
   text-decoration: underline;
 }
 
@@ -70,40 +108,73 @@
   color: white;
   background-color: #1f1e1e;
   text-align: center;
+  margin-top: auto;
 }
 
-@media screen and (max-width: 767px) {
-  .map {
-    width: 100%;
-    height: auto;
-  }
 
-  .h2{
-    font-family: 'Poppins';
-    font-size: 0.8rem;
-  }
-  .infoloc {
-    font-size: 0.6rem;
-  }
+  @media (max-width: 768px) {
+    .footer {
+      height: auto; 
+    }
+  
+    .mapContainer {
+      flex-direction: column; 
+      align-items: center;
+      width: 100%; 
+      margin: 1rem ; 
+    }
+  
+    .headingfooter {
+      font-size: 1.4rem;
+    }
+  
+    .footerhead {
+      font-size: 1.3rem; 
+    }
+  
+    .infofooter {
+      font-size: 1.2rem;
+    }
 
-  .loc {
-    width: 100%;
-  }
+    .infofooter a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .infofooter a:hover {
+      text-decoration: underline;
+    }
 
-  .links {
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    padding-bottom: 1rem;
+    .emails {
+      margin-top: 1rem;
+    }
+  
+    .map {
+      width: 58%; 
+      height: 200px;
+      margin-bottom: 1rem; 
+      margin-left: 2rem;
+    }
+  
+    .loc {
+      width: 80%; 
+    }
+  
+    .infoloc {
+      font-size: 1rem; 
+      margin: 2rem 0.3rem; 
+    }
+  
+    .links {
+      width: 90%;
+      font-size: 1rem; 
+    }
+  
+    .copy {
+      height: 5vh; 
+      width: 90%;
+      font-size: 1rem; 
+      padding: 1rem;
+      margin-top: auto;
+    }
   }
-  .links a{
-    margin: 1%;
-    font-size: 0.7rem;
-  }
-
-  .copy{
-    font-size: 0.6rem;
-    height: auto;
-  }
-}
