@@ -1,70 +1,54 @@
-import React, { Component } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import styles from "./Testimonials.module.css";
+import React, { useState, useEffect } from 'react';
+import styles from './testimonial.module.css'; 
 import hero from "../../resources/HeroLogo.png";
-import bajaj from "../../resources/Bajajlogo.png";
-import plustech from "../../resources/PlustechLogo.jpeg";
+import bajaj from "../../resources/Bajajlogo.png"
 
-export default class Testimonials extends Component {
-  render() {
-    return (
-      <div class={styles.carouselcard}>
-        <Carousel
-          showArrows={true}
-          infiniteLoop={true}
-          showThumbs={false}
-          showStatus={false}
-          autoPlay={true}
-          interval={6100}
-        >
-        
-            <div className={styles.myCarousel}>
-              <div className={styles.content}>
-                <p>
-                  Working with Technavia has been a game-changer for our
-                  manufacturing process. Their robotic services have
-                  revolutionized our production line, increasing efficiency and
-                  accuracy beyond our expectations. They are professional,
-                  knowledgeable, and dedicated to delivering exceptional
-                  results.
-                </p>
-                <div className={styles.logoimage}>
-                  <img src={hero} alt="hero" />
-                </div>
-              </div>
-            </div>
-          
-            <div className={styles.myCarousel}>
-              <div className={styles.content}>
-                <p>
-                  We were incredibly impressed with the level of service and
-                  support provided by Technavia India Pvt Ltd. during our
-                  project.Their dedication to customer satisfaction is truly
-                  commendable
-                </p>
-                <div className={styles.logoimage}>
-                  <img src={bajaj} alt="hero" />
-                </div>
-              </div>
-            </div>
-        
-            <div className={styles.myCarousel}>
-              <div className={styles.content}>
-                <p>
-                  We were incredibly impressed with the level of service and
-                  support provided by Technavia India Pvt Ltd. during our
-                  project.Their dedication to customer satisfaction is truly
-                  commendable
-                </p>
-                <div className={styles.logoimage}>
-                  <img src={plustech} alt="hero" />
-                </div>
-              </div>
-            </div>
-         
-        </Carousel>
-      </div>
-    );
-  }
-}
+const Testimonial = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const data = [
+    {
+      text: 'Working with Technavia has been a game-changer for our manufacturing process. Their robotic services have revolutionized our production line, increasing efficiency and accuracy beyond our expectations. They are professional,knowledgeable, and dedicated to delivering exceptional results.',
+      image: hero,
+    },
+    {
+      text: 'We are proud of You and Your team for everything you have done to convert "An Impossible to a Possible."',
+      image: bajaj,
+    },
+    {
+      text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      image: 'image3.jpg',
+    },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1));
+    }, 4000); 
+
+    return () => clearInterval(interval);
+  }, [data.length]);
+
+  return (
+    <>
+    <div className={styles.tcontainer}>
+    <div className={styles.line}></div>
+    <div className={styles.heading}>TESTIMONIALS</div>
+    <div className={styles.content}>What Our Clients Say</div>
+    </div>
+    <div className={styles.carousel}>
+      {data.map((item, index) => (
+        <div key={index} className={`${styles.slide} ${index === activeIndex ? styles.active : ''}`}>
+          <div className={styles.testcard}>
+          <div className={styles.text}>{item.text}</div>
+          <div className={styles.image}>
+            <img src={item.image} alt={`Image ${index + 1}`} />
+          </div>
+        </div>
+        </div>
+      ))}
+    </div>
+    </>
+  );
+};
+
+export default Testimonial;
