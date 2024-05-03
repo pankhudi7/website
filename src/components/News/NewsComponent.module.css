@@ -4,10 +4,6 @@
   align-items: center;
 }
 
-.content {
-  margin-top: 0;
-}
-
 .smallNewsContainer {
   display: flex;
   width: 100%;
@@ -16,19 +12,40 @@
 
 .smallNews {
   width: 80%;
-  height: 50%;
-  background-color: purple;
+  height: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 1rem;
+  margin: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.smallImage {
+  background-color: #ccc;
+  width: 120px;
+  height: 120px;
+  margin: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+}
+.smallImage img {
+  max-width: 100%; 
+  height: auto; 
+  object-fit: cover;
+}
 
 
 .newsText {
   text-align: center;
-  height: 30vh;
+  height: 35vh;
+  width: 70%;
+  font-size: 0.8rem;
+  font-family: 'Poppins';
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
 }
 
 .newsContainer {
@@ -54,14 +71,22 @@
 
 .newsimage {
   width: 50%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
 }
-
+.newsimage .img{
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 .content {
   flex: 1;
   width: 50%;
   height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -72,24 +97,19 @@
 .description {
   width: 90%;
   height: 100%;
-  background-color: black;
   font-size: 1rem;
-  color: #666;
+  font-family: 'Poppins';
+  color: black;
 }
 
-.smallimage {
-  background-color: #ccc;
-  width: 150px;
-  height: 150px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
+
 
 @media (max-width: 768px) {
   .smallNewsContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .newsimage{
@@ -99,10 +119,32 @@
     width: 100%;
     height: auto;
   }
-  
+  .smallImage {
+    background-color: #ccc;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .newsText{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
 }
 
-
+@media (max-width: 520px){
+  .newsContainer{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 
 @media (min-width: 768px) {
@@ -111,4 +153,8 @@
   }
 }
 
-
+@media only screen and (max-width: 960px) and (min-width: 770px){
+  .newsText{
+    font-size: 0.6rem;
+  }
+}
