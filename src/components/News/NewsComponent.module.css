@@ -22,8 +22,8 @@
 
 .smallImage {
   background-color: #ccc;
-  width: 120px;
-  height: 120px;
+  width: 80%;
+  height: 100%;
   margin: 0.5rem;
   border-radius: 5px;
   display: flex;
@@ -39,7 +39,7 @@
   text-align: center;
   height: 35vh;
   width: 70%;
-  font-size: 0.8rem;
+  font-size: 10px;
   font-family: 'Poppins';
   display: flex;
   flex-wrap: wrap;
@@ -105,6 +105,7 @@
 
 
 @media (max-width: 768px) {
+
   .smallNewsContainer {
     display: flex;
     flex-direction: column;
@@ -114,6 +115,12 @@
 
   .newsimage{
     width: 100%;
+    max-height:50% ;
+  }
+
+  .newsimage img{
+    width: 100%;
+    height: 100%;
   }
   .content {
     width: 100%;
@@ -121,8 +128,8 @@
   }
   .smallImage {
     background-color: #ccc;
-    width: 70px;
-    height: 70px;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
     margin-bottom: 20px;
     display: flex;
@@ -135,7 +142,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 }
 
