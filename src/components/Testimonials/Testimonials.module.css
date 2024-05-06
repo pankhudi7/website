@@ -82,6 +82,10 @@
   .image {
     margin-top: 1rem; 
     margin-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   
   .image img {
@@ -107,5 +111,3 @@
       height: auto;
     }
   }
-  
-
