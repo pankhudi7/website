@@ -35,7 +35,6 @@
   width: 90px;
   margin-left: 2rem;
   margin-top: 1rem;
-
 }
 .heading{
   margin-left: 2rem;
@@ -68,48 +67,52 @@
     display: grid;
     align-items: center;
     height: 400px;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 0;
+    margin-right: 0;
+
+    display: flex;
+    justify-content: center;
   }
- 
-  /* .parent{
-    height: 50vh;
-    background-color: black;
-    display: grid;
-    align-items: center;
-    margin-left: 8%;
-    margin-right: 8%;
-  } */
+  .imageContainer img{
+    background-position: center;
+    
+  }
+  .heading{
+    font-size: 1rem;
+  }
+
+  .line{
+    border-top: 7px solid #FF0505;
+    width: 50px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
 
   .content{
     text-align: left;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     margin: 1rem;
+    height: fit-content;
   }
 
   .mainContainer{
     background-color: #F0F0F0;
-    height: fit-content;
-    display: flex;
+    height: 100vh;
     padding: 1rem;
-    height: 500px;      
   }
 
   .aboutusCard {
-    margin-top: 50%;
     margin-left: auto;
     margin-right: auto;
     width: 90%; 
     height: fit-content;
-    margin-bottom: 5%;
   }
 
   .imageContainer {
     justify-content: center;
-    height: 40vh;
-    width: 50%;
+    height: 50vh;
+    width: 95%;
     background-position: center;
-    
   }
 
 }
