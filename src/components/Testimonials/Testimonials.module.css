@@ -34,6 +34,7 @@
     font-weight: 200;
     text-align: center;
   }
+
   .content{
     font-size: 2.2rem;
     margin: 1rem;
@@ -48,6 +49,7 @@
     opacity: 0.9;
     margin: 0.5rem;
     font-family: 'Poppins';
+    padding-bottom: 1rem;
   }
 
   .slide {
@@ -89,11 +91,12 @@
   }
   
   .image img {
-    width: 150px; 
-    height: auto;
+    width: 250px; 
+    height: 120px;
   }
   
-  
+ 
+
   @media (max-width: 768px) {
     .carousel {
       height: 60vh; 
