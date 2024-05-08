@@ -17,8 +17,9 @@ const Footer = () => {
         <div className={styles.loc}>
           <h2 className={styles.headingfooter}>Technavia India Pvt Ltd</h2>
           <div class={styles.infoloc}>
-            <FontAwesomeIcon icon={faMapMarkerAlt} /> Plot no.223, Pace City II,
-            Sector 37, Gurugram, Haryana 122001
+            <FontAwesomeIcon icon={faMapMarkerAlt} /> Plot no.223, Pace City II,<br/>
+            Sector 37, Gurugram, <br/>
+            Haryana 122001
             <br />
             <FontAwesomeIcon icon={faPhone} /> 0124 401 5757 <br />
           </div>
@@ -29,13 +30,15 @@ const Footer = () => {
             Branch Offices
             </div>
           <div class={styles.infofooter}>
-            <a href="https://maps.app.goo.gl/NgnQMei6qyncRtQ37" target="blank"> Pune </a> <br/>
-            <a href="#"> Noida </a> <br/>
+            <a href="https://www.google.com/maps/place/ION+7/@18.6341372,73.7986629,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2b9ac6a433ebd:0xac74692404c779c6!8m2!3d18.6341321!4d73.8012378!16s%2Fg%2F11lgnr03zl?entry=ttu" target="blank"> Pune </a> <h6>302, ION7, Morewadi, Pimpri-Chinchwad, Maharashtra 411018 </h6> <br/>
+            <a href="https://www.google.com/maps/place/Worcoz+Coworking/@28.6296546,77.3763818,17z/data=!4m14!1m7!3m6!1s0x390cef8cdf6c7ca9:0x26e011dc817afe96!2sWorcoz+Coworking!8m2!3d28.62965!4d77.3809952!16s%2Fg%2F11vyc8_61r!3m5!1s0x390cef8cdf6c7ca9:0x26e011dc817afe96!8m2!3d28.62965!4d77.3809952!16s%2Fg%2F11vyc8_61r?entry=ttu" target="blank"> Noida </a> <h6>A24, First Floor, A Block, Sector 63, Noida, Uttar Pradesh 201301</h6><br/>
 
             <div className={styles.emails}>
-              Reach out to us at- <br/>
-              hr@technaviaindia.com
-              sales@technaviaindia.com 
+              <h6>Reach out to us at: </h6> <br/>
+              For Job Queries : <a href ="mailto:hr@technaviaindia.com">hr@technaviaindia.com</a>
+              <br/>
+              For Business Inquiries : <a href ="mailto:sales@technaviaindia.com ">sales@technaviaindia.com</a>
+              
               </div>
             
           </div>
