@@ -1,0 +1,35 @@
+.container {
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.scrollWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: scroll 30s linear infinite;
+  animation-iteration-count: infinite;
+  width: fit-content;
+}
+
+.image {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    width: 100px; 
+    height: 100px; 
+  }
+}
