@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Marquee.module.css";
 import ashok from "../../components/Logos/logos/ashok.png";
 import atia from "../../components/Logos/logos/atia.jpg";
-import autopal from "../../components/Logos/logos/autopal.png";
+import wipro from "../../components/Logos/logos/wipro.png";
 import bajaj from "../../components/Logos/logos/Bajajlogo.png";
 import daifuku from "../../components/Logos/logos/daifuku.png";
 import daimler from "../../components/Logos/logos/daimler.png";
@@ -32,14 +32,13 @@ import tata from "../../components/Logos/logos/tata.png"
 import tyota from "../../components/Logos/logos/toyota.png"
 import tvs from "../../components/Logos/logos/tvs.png"
 import unominda from "../../components/Logos/logos/unominda.png"
-import varroc from "../../components/Logos/logos/varroc.png"
 
 
 const Marquee = () => {
   const image1 = [
     { src: ashok , alt: "Image 1" },
     { src: atia , alt: "Image 2" },
-    { src: autopal, alt:"autopal logo"},
+    { src: wipro, alt:"wipro logo"},
     {src: gabriel, alt: "Image 3" },
     { src: lumax, alt: "Image 4" },
     {src: ijl, alt: "Image 5" },
